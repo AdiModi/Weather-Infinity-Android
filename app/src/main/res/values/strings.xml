@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">∞ Weather ∞</string>
+    <string name="splash_greeting">Welcome to</string>
+    <string name="main_city">%s</string>
+    <string name="main_weatherType">%s</string>
+    <string name="main_temperature">Current Temperature: %s°C</string>
+    <string name="main_humudity">Humidity: %s</string>
+    <string name="main_pressure">Pressure: %s hPa</string>
+    <string name="main_minTemperature">Min Temperature↓: %s°C</string>
+    <string name="main_maxTemperature">Max Temperature↑: %s°C</string>
+    <string name="main_windSpeed">WindSpeed: %s ᵐ/ₛ</string>
+    <string name="acknowledgement">powered by OpenWeatherMap</string>
+</resources>

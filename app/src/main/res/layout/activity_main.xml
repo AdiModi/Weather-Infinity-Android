@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pullToRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/activityBackgroundRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/def_back">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#66000000" />
+
+        <TextView
+            android:id="@+id/citconTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/main_city"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#FFF"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/weatherTypeRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/citconTextView"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/weatherTypeImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/weatherTypeTextView"
+                android:layout_alignBottom="@id/weatherTypeTextView"
+                app:srcCompat="@drawable/def_icon" />
+
+            <TextView
+                android:id="@+id/weatherTypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/weatherTypeImageView"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/main_weatherType"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="#FFF"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/temperatureTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weatherTypeRelativeLayout"
+            android:layout_marginLeft="55dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/main_temperature"
+            android:textAlignment="viewStart"
+            android:textColor="#FFF"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/humidityTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temperatureTextView"
+            android:layout_marginLeft="55dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/main_humudity"
+            android:textAlignment="viewStart"
+            android:textColor="#FFF"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/pressureTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/humidityTextView"
+            android:layout_marginLeft="55dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/main_pressure"
+            android:textColor="#FFF"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/minTemperatureTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pressureTextView"
+            android:layout_marginLeft="55dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/main_minTemperature"
+            android:textAlignment="viewStart"
+            android:textColor="#FFF"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/maxTemperatureTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/minTemperatureTextView"
+            android:layout_marginLeft="55dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/main_maxTemperature"
+            android:textAlignment="viewStart"
+            android:textColor="#FFF"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/windSpeedTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/maxTemperatureTextView"
+            android:layout_marginLeft="55dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/main_windSpeed"
+            android:textAlignment="viewStart"
+            android:textColor="#FFF"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="cursive"
+            android:text="@string/acknowledgement"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>
